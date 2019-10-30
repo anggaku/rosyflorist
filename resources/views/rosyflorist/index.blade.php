@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="/src/vendor/lightbox/dist/ekko-lightbox.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/src/css/main.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!-- Fontawesome -->
+    <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <!-- Bootstrap CSS -->
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <title>Rosy Florist</title>
 </head>
@@ -428,9 +430,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="../src/vendor/jquery/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
 
     <!-- Plugin JS-->
     <script src="../src/vendor/jquery-easing/jquery.easing.min.js"></script>
