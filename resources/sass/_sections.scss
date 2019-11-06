@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans&display=swap');
+#sample_buket {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+    .img-custom {
+        padding-bottom: 20px;
+    }
+    $color_1: #fff;
+    $background_color_1: rgba(0,
+    0,
+    0,
+    0.5);
+    $background_color_2: transparent;
+    .hovereffect {
+        width: 100%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            background-color: $background_color_1;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        img {
+            display: block;
+            position: relative;
+            -webkit-transition: all .4s linear;
+            transition: all .4s linear;
+        }
+        h2 {
+            text-transform: uppercase;
+            color: $color_1;
+            text-align: center;
+            position: relative;
+            font-size: 17px;
+            background: rgba(0, 0, 0, 0.6);
+            -webkit-transform: translatey(-100px);
+            -ms-transform: translatey(-100px);
+            transform: translatey(-100px);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        a.info {
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            color: $color_1;
+            border: 1px solid #fff;
+            background-color: $background_color_2;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            margin: 50px 0 0;
+            padding: 7px 14px;
+            &:hover {
+                box-shadow: 0 0 5px #fff;
+            }
+        }
+        &:hover {
+            img {
+                -ms-transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            .overlay {
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+            h2 {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                -ms-transform: translatey(0);
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+            }
+            a.info {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                -ms-transform: translatey(0);
+                -webkit-transform: translatey(0);
+                transform: translatey(0);
+                -webkit-transition-delay: .2s;
+                transition-delay: .2s;
+            }
+        }
+    }
+}
+
+#about_service {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+    .title-section {
+        font-family: 'Dancing Script', cursive;
+        color: $primary-text-color;
+    }
+    .subtitle-section {
+        text-transform: uppercase;
+        color: $primary-text-color;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .image-icon {
+        img {
+            width: 37.8%;
+            height: 31.9%;
+        }
+    }
+    .image-title {
+        padding: 5px;
+        color: $primary-text-color;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .image-desc {
+        padding: 5px;
+        color: $primary-text-color;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+#portofolio {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+    .title-section {
+        font-family: 'Dancing Script', cursive;
+        color: $primary-text-color;
+    }
+    /* Gray Scale */
+    .hover08 {
+        img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        &:hover {
+            img {
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+#our_team {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+    .title-section {
+        font-family: 'Dancing Script', cursive;
+        color: $primary-text-color;
+    }
+    .subtitle-section {
+        text-transform: uppercase;
+        color: $primary-text-color;
+        font-family: 'Dancing Script', cursive;
+    }
+    .image-photo {
+        .img-circle {
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 214.5px;
+            height: 214.5px;
+        }
+    }
+    .title-photo {
+        color: $primary-text-color;
+        font-family: 'Open Sans', sans-serif;
+        h6 {
+            font-weight: bold;
+        }
+    }
+    .subtitle-photo {
+        color: $primary-text-color;
+        font-family: 'Open Sans', sans-serif;
+    }
+}

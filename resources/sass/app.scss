@@ -5,3 +5,14 @@
 @import '~@fortawesome/fontawesome-free/scss/brands';
 //IMPORT BOOTSTRAP
 @import '~bootstrap/scss/bootstrap';
+// Set Color Used in the Rosy Florist
+@import 'variables.scss';
+// Base of the Rosy Florist Website like a margin padding dll
+@import 'base.scss';
+// Set components used like Button, Link dll
+@import 'components.scss';
+// Layouts in the Rosy Florist
+@import 'navbar.scss';
+@import 'header.scss';
+@import 'sections.scss';
+@import 'footer.scss';
